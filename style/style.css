@@ -1,0 +1,419 @@
+/* start animations */
+@keyframes header-animation {
+    from {
+        letter-spacing: 0.3rem;
+        color: #fff
+    }
+
+    to {
+        letter-spacing: 0.1rem;
+        color: rgb(252, 200, 141)
+    }
+}
+
+@keyframes win-zoom {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* end animations */
+
+/* start general-styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, #870000, #190a05);
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: 0;
+}
+
+#game-box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#win {
+    width: 91%;
+    height: 91%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3ce745;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
+    padding: 40% 3rem;
+    text-align: center;
+    animation: win-zoom 2s ease-out 1;
+}
+
+/* end general-styles */
+
+/* start game-modals */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 100;
+}
+
+.modal-dialog {
+    width: 50%;
+    background: radial-gradient(circle, #870000, #190a05);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: lobster;
+}
+
+.modal-title {
+    width: 80%;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.modal-title h2 {
+    display: inline;
+    font-family: abril;
+    font-size: 1.2rem;
+    color: rgb(252, 200, 141);
+    letter-spacing: 0.3rem;
+}
+
+.modal-title span {
+    font-size: 1.2rem;
+}
+
+/* start players-name-modal */
+.player-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#input1-m,
+#input2-m {
+    position: relative;
+    color: #fff;
+    margin-top: -0.2rem;
+    font-size: 0.7rem;
+    font-family: lobster;
+    letter-spacing: 0.1rem;
+    background-color: red;
+    padding: 0.2rem 0.25rem;
+    display: none;
+    border-radius: 0.4rem;
+}
+
+#input1-m::before,
+#input2-m::before {
+    content: '';
+    position: absolute;
+    bottom: 90%;
+    left: 10%;
+    width: 0;
+    height: 0;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid red;
+    border-left: 5px solid transparent;
+}
+
+.modal-dialog input {
+    width: 70%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 0;
+    outline: 0;
+    background-color: #ddd;
+}
+
+.modal-dialog input::placeholder {
+    color: #555;
+}
+
+.modal-dialog input:focus {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 255, 0.5);
+}
+
+.modal-dialog input:focus::placeholder {
+    color: #999;
+}
+
+.modal-dialog label {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #ddd;
+}
+
+.modal-dialog label span {
+    margin-left: 0.5rem;
+    vertical-align: baseline;
+}
+
+#submit-player {
+    padding: 0.5rem 0.75rem;
+    font-family: lobster;
+    font-size: 1rem;
+    width: 30%;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 255, 0.7);
+    color: #ddd;
+    margin: 1rem 0 1.5rem 0;
+    transition: all 0.5s;
+}
+
+#submit-player:hover {
+    background-color: rgba(0, 0, 255, 0.9);
+    color: #fff;
+    box-shadow: 0 0 5px 2px blueviolet;
+}
+
+/* end players-name-modal */
+
+/* start game-rules-modal */
+#info-modal {
+    display: none;
+}
+
+#close-modal {
+    background-color: transparent;
+    color: #aaa;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    z-index: 105;
+    transition: all 0.5s;
+}
+
+#close-modal span {
+    font-size: 2rem;
+}
+
+#close-modal:hover {
+    color: red;
+}
+
+#info-modal .modal-dialog h4 {
+    color: #ddd;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+#rule-list {
+    width: 100%;
+    color: #ddd;
+    padding: 0 1rem;
+}
+
+#rule-list ul {
+    padding: 0 1rem;
+    font-size: 0.8rem;
+    font-family: 'times new roman';
+    margin-bottom: 1.5rem;
+}
+
+#rule-list ul li {
+    text-align: justify;
+    margin: 0.5rem 0;
+    letter-spacing: 0.1rem;
+}
+
+/* end game-rules-modal */
+/* end game-modals */
+
+/* start game-board-styles */
+#board {
+    width: 47vw;
+    height: 47vw;
+    display: grid;
+    grid-template-rows: repeat(10, 9.55%);
+    grid-template-columns: repeat(10, 9.55%);
+    row-gap: 0.5%;
+    column-gap: 0.5%;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.cell {
+    background-color: #181818;
+    text-align: center;
+    border: 1px solid #fff;
+    box-shadow: inset 0 0 15px 8px rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    line-height: 240%;
+}
+
+/* end game-board-styles */
+
+/* start game-guid-styles */
+#game-guid {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#game-guid-title-0, #game-guid-title-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#game-guid-title-0 span:first-child, #game-guid-title-1 span:first-child {
+    font-size: 1.5rem;
+    font-family: abril;
+    letter-spacing: 0.3rem;
+    color: #ddd;
+    margin-bottom: 1rem;
+    animation: header-animation 0.6s linear infinite alternate;
+}
+
+#game-guid-title-0 span:last-child, #game-guid-title-1 span:last-child {
+    font-size: 1rem;
+    font-family: lobster;
+    letter-spacing: 0.1rem;
+    color: #e74c3c;
+}
+
+/* start game-buttons-styles */
+.game-controls {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.game-controls button span {
+    vertical-align: middle;
+}
+
+.game-controls:first-of-type button {
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+}
+
+.game-controls:first-of-type button:hover {
+    box-shadow: 0 0 10px 4px rgba(255, 0, 0, 0.3);
+}
+
+.game-controls:first-of-type button:hover span {
+    color: rgba(0, 0, 255, 0.8);
+}
+
+.game-controls:first-of-type button span {
+    font-size: 2.5rem;
+    transition: all 0.4s;
+}
+
+#hand-roll span:first-child {
+    font-size: 2.5rem;
+    color: rgb(252, 200, 141);
+}
+
+#hand-roll span:last-child {
+    font-size: 1rem;
+    transform: rotate(45deg);
+    color: #870000;
+}
+
+#roll:hover #dice {
+    box-shadow: 0 0 10px 4px rgba(255, 0, 0, 0.3);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+#dice {
+    border-radius: 50%;
+    width: 70px;
+    height: 75px;
+    padding: 0.5rem;
+    transition: all 0.8s;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+/* end game-buttons-styles */
+
+/* start game-info-styles */
+.players {
+    text-align: center;
+}
+
+.players h4 {
+    font-family: lobster;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.players span {
+    font-size: 2rem;
+}
+
+/* end game-info-styles */
+
+/* start game-turn styles */
+#active-player {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* end game-turn styles */
+
+/* start game-message styles */
+#game-messages {
+    height: auto;
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#message {
+    color: rgb(1, 1, 37);
+    text-align: justify;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+/* end game-message styles */
+/* end game-guid-styles */

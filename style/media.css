@@ -1,0 +1,617 @@
+@media (min-width: 800px) {
+  .cell {
+    font-size: 15px;
+    line-height: 250%;
+  }
+
+  #game-guid-title-0 {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .cell {
+    font-size: 17px;
+    line-height: 240%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .cell {
+    font-size: 19px;
+    line-height: 230%;
+  }
+
+  #win {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  .cell {
+    font-size: 23px;
+    line-height: 240%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .cell {
+    font-size: 25px;
+    line-height: 240%;
+  }
+
+  #win {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .cell {
+    font-size: 28px;
+    line-height: 240%;
+  }
+
+  #win {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .cell {
+    font-size: 32px;
+    line-height: 250%;
+  }
+
+  #win {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .game-controls:first-of-type button {
+    padding: 0.3rem;
+  }
+
+  .game-controls:first-of-type button span {
+    font-size: 2.2rem;
+  }
+
+  .players h4 {
+    font-size: 1rem;
+  }
+
+  #hand-roll span:first-child {
+    font-size: 2rem;
+  }
+
+  #hand-roll span:last-child {
+    font-size: 0.8rem;
+  }
+
+  #dice {
+    width: 60px;
+    height: 65px;
+  }
+
+  #active-player {
+    font-size: 1rem;
+  }
+
+  #game-messages h4 {
+    font-size: 0.9rem;
+  }
+
+  #win {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .game-controls {
+    padding: 0.3rem 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .game-controls:first-of-type button {
+    padding: 0.15rem;
+  }
+
+  #game-guid-title-1 {
+    margin-bottom: 1rem;
+  }
+
+  #game-guid-title-1 span:first-child {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .players h4 {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .players span {
+    font-size: 1.7rem;
+  }
+
+  #dice {
+    width: 50px;
+    height: 55px;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 830px) {
+  #game-guid-title-1 span:first-child {
+    font-size: 1.2rem;
+  }
+
+  .game-controls:first-of-type button span {
+    font-size: 2rem;
+  }
+
+  .game-controls:first-of-type button {
+    padding: 0;
+  }
+
+  .players span {
+    font-size: 1.5rem;
+  }
+
+  #hand-roll span:first-child {
+    font-size: 1.5rem;
+  }
+
+  #hand-roll span:last-child {
+    font-size: 0.6rem;
+  }
+
+  #dice {
+    width: 40px;
+    height: 45px;
+    padding: 0.38rem;
+  }
+
+  #active-player {
+    font-size: 0.8rem;
+  }
+
+  #game-messages h4 {
+    font-size: 0.8rem;
+  }
+
+  #message {
+    font-size: 0.6rem;
+  }
+
+  #win {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .cell {
+    font-size: 25px;
+    line-height: 280%;
+  }
+
+  #game-guid-title-0 {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  #game-guid-title-1 {
+    display: none;
+  }
+
+  .modal-dialog {
+    width: 60%;
+  }
+
+  .modal-title h2,
+  .modal-title span {
+    font-size: 1rem;
+  }
+
+  #input1-m,
+  #input2-m {
+    font-size: 0.6rem;
+  }
+
+  #board {
+    width: 98vw;
+    height: 98vw;
+    margin: 0 0 1rem 0;
+  }
+
+  #game-guid {
+    padding: 0.5rem;
+    width: 100%;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .game-controls {
+    margin-bottom: 0;
+  }
+
+  #options {
+    width: auto;
+    flex-direction: column-reverse;
+  }
+
+  div.game-controls:first-of-type button {
+    margin: 0.5rem 0;
+  }
+
+  #dice {
+    width: 60px;
+    height: 65px;
+  }
+
+  #hand-roll span:first-child {
+    font-size: 2rem;
+  }
+
+  #hand-roll span:last-child {
+    font-size: 1rem;
+  }
+
+  .players h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .players span {
+    font-size: 1.7rem;
+  }
+
+  .guid-media-box {
+    width: 30%;
+    height: inherit;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .guid-media-box:last-of-type {
+    width: 60%;
+    border-radius: 1rem;
+    justify-content: flex-end;
+  }
+
+  #active-player {
+    font-size: 1rem;
+    margin: 0.5rem 0 0 0;
+  }
+
+  #game-messages {
+    height: 48%;
+  }
+
+  #game-messages h4 {
+    font-size: 1rem;
+  }
+
+  #message {
+    font-size: 0.9rem;
+  }
+
+  #win {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .cell {
+    font-size: 23px;
+    line-height: 300%;
+  }
+}
+
+@media (max-width: 700px) {
+  .cell {
+    font-size: 22px;
+    line-height: 300%;
+  }
+
+  #win {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .cell {
+    font-size: 20px;
+    line-height: 300%;
+  }
+}
+
+@media (max-width: 600px) {
+  #game-guid {
+    padding: 0.25rem;
+  }
+
+  .game-controls {
+    padding: 0.2rem 0.2rem;
+  }
+
+  .guid-media-box {
+    width: 35%;
+  }
+
+  .guid-media-box:last-of-type {
+    width: 55%;
+  }
+
+  #game-messages h4 {
+    font-size: 0.9rem;
+  }
+
+  #message {
+    font-size: 0.75rem;
+  }
+
+  #win {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .modal-dialog {
+    width: 70%;
+  }
+
+  .modal-title h2,
+  .modal-title span {
+    font-size: 0.9rem;
+  }
+
+  .modal-dialog label {
+    font-size: 0.85rem;
+  }
+
+  #submit-player {
+    font-size: 0.85rem;
+  }
+
+  .modal-dialog input::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .cell {
+    font-size: 18px;
+    line-height: 290%;
+  }
+}
+
+@media (max-width: 500px) {
+  .cell {
+    font-size: 16px;
+    line-height: 290%;
+  }
+
+  #win {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 470px) {
+  #rule-list ul {
+    font-size: 0.7rem;
+  }
+
+  .modal-title h2,
+  .modal-title span {
+    font-size: 0.8rem;
+  }
+
+  .cell {
+    font-size: 14px;
+    line-height: 280%;
+  }
+
+  #game-guid-title-0 span:first-child {
+    font-size: 1.3rem;
+  }
+
+  .guid-media-box {
+    width: 35%;
+  }
+
+  .guid-media-box:last-of-type {
+    width: 50%;
+  }
+
+  #dice {
+    width: 45px;
+    height: 50px;
+    padding: 0.4rem;
+  }
+
+  .players h4 {
+    font-size: 0.7rem;
+  }
+
+  .players span {
+    font-size: 1.4rem;
+  }
+
+  #game-messages h4 {
+    font-size: 0.8rem;
+  }
+
+  #message {
+    font-size: 0.6rem;
+  }
+
+  #active-player {
+    font-size: 0.8rem;
+  }
+
+  div.game-controls:first-of-type button {
+    margin: 0.5rem 0;
+  }
+
+  .game-controls:first-of-type button span {
+    font-size: 1.5rem;
+  }
+
+  #hand-roll span:first-child {
+    font-size: 1.5rem;
+  }
+
+  #hand-roll span:last-child {
+    font-size: 0.7rem;
+  }
+
+  #game-messages {
+    height: 50%;
+  }
+
+  #game-messages h4 {
+    font-size: 0.8rem;
+  }
+
+  #win {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 410px) {
+
+  .modal-title h2,
+  .modal-title span {
+    font-size: 0.7rem;
+  }
+
+  .cell {
+    font-size: 11px;
+    line-height: 350%;
+  }
+
+  #game-guid-title-0 span:first-child {
+    font-size: 1.2rem;
+  }
+
+  #game-messages {
+    height: 50%;
+  }
+
+  #game-messages h4 {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .modal-dialog {
+    width: 100%;
+  }
+
+  #input1-m,
+  #input2-m {
+    font-size: 0.5rem;
+  }
+
+  .cell {
+    font-size: 9px;
+    line-height: 350%;
+  }
+
+  .players h4 {
+    font-size: 0.6rem;
+  }
+
+  .players h4 {
+    font-size: 0.5rem;
+  }
+
+  #dice {
+    width: 35px;
+    height: 40px;
+    padding: 0.3rem;
+  }
+
+  #game-guid-title-0 span:first-child {
+    font-size: 1rem;
+  }
+
+  #message {
+    font-size: 0.55rem;
+  }
+
+  #game-messages h4 {
+    font-size: 0.7rem;
+  }
+
+  #active-player {
+    font-size: 0.7rem;
+  }
+
+  #win {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .cell {
+    font-size: 8px;
+    line-height: 350%;
+  }
+
+  #win {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 260px) {
+  .cell {
+    font-size: 7px;
+    line-height: 350%;
+  }
+
+  #hand-roll {
+    display: none;
+  }
+
+  button.game-controls {
+    justify-content: center;
+  }
+
+  .players span {
+    font-size: 1.1rem;
+  }
+
+  #active-player {
+    font-size: 0.5rem;
+  }
+
+  #game-messages h4 {
+    font-size: 0.6rem;
+  }
+
+  #message {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 200px) {
+
+  .modal-title h2,
+  .modal-title span {
+    font-size: 0.8rem;
+  }
+
+  .modal-dialog label {
+    font-size: 0.8rem;
+  }
+
+  #submit-player {
+    font-size: 0.8rem;
+  }
+
+  #win {
+    font-size: 0.8rem;
+  }
+}

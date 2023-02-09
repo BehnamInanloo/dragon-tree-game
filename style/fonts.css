@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'abril';
+  src: url('./fonts/AbrilFatface.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'lobster';
+  src: url('./fonts/Lobster.ttf') format('truetype');
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#128009 Dragon & Tree &#127794</title>
+
+    <!-- include css-files -->
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/icons.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+</head>
+
+<body>
+    <!-- start game-modals -->
+    <!-- start players-name-modal -->
+    <div class="modal" id="players-modal">
+        <div class="modal-dialog">
+            <div class="modal-title">
+                <span>&#128009</span>
+                <h2>Dragon & Tree</h2>
+                <span>&#127794</span>
+            </div>
+            <div class="player-box">
+                <label for="p1">Enter 1st player's name <span>&#128060</span></label>
+                <input id="p1" type="text" placeholder="1st player..." maxlength="8" autofocus>
+                <span id="input1-m">Please enter 1st player's name</span>
+            </div>
+            <div class="player-box">
+                <label for="p2">Enter 2nd player's name <span>&#128047</span></label>
+                <input id="p2" type="text" placeholder="2nd player..." maxlength="8">
+                <span id="input2-m">Please enter 2nd player's name</span>
+            </div>
+            <button type="button" id="submit-player">done!</button>
+        </div>
+    </div>
+    <!-- end players-name-modal -->
+    <!-- start game-rules-modal -->
+    <div class="modal" id="info-modal">
+        <div class="modal-dialog">
+            <button id="close-modal" title="close">
+                <span class="material-icons">close</span>
+            </button>
+            <div class="modal-title">
+                <span>&#128009</span>
+                <h2>Dragon & Tree</h2>
+                <span>&#127794</span>
+            </div>
+            <h4>game rules</h4>
+            <div id="rule-list">
+                <ul>
+                    <li>Each player must get dice #6 to start the game.</li>
+                    <li>From this point on, getting the dice #6 will reward each player with a chance to re-roll the
+                        dice.</li>
+                    <li>In this game, it is possible to hit another player. In this case, the other player will return
+                        to the beginning of the game.</li>
+                    <li>If a player enters the dragon's house, he will be damaged and randomly return to one of the
+                        previous cells.</li>
+                    <li>If a player enters a tree house, he can climb the tree and randomly jump to one of the next
+                        cells.</li>
+                    <li>Each player who crosses the final flag first will win the game.</li>
+                    <li>You can change the placement of dragons and trees using the reset button.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end game-rules-modal -->
+    <!-- end game-modals -->
+
+    <!-- start game box -->
+    <div id="game-box">
+        <h1 id="game-guid-title-0"> <!-- game-title in screens (max-width: 800px) -->
+            <span>Dragon & Tree</span>
+            <span>by Behnam Inanloo</span>
+        </h1>
+        <!-- start game-board -->
+        <div id="board">
+            <p id="win"></p>
+        </div>
+        <!-- end game-board -->
+
+        <!-- start game-guid -->
+        <div id="game-guid">
+            <h1 id="game-guid-title-1"> <!-- game-title in screens (min-width: 800px) -->
+                <span>Dragon & Tree</span>
+                <span>by Behnam Inanloo</span>
+            </h1>
+
+            <!-- start game-buttons -->
+            <div class="game-controls" id="options">
+                <button id="reset" title="reset">
+                    <span class="material-icons">restart_alt</span>
+                </button>
+                <button id="sound" title="sound">
+                    <span class="material-icons">music_note</span>
+                </button>
+                <button id="info" title="rules">
+                    <span class="material-icons">info</span>
+                </button>
+            </div>
+            <!-- end game-buttons -->
+            <div class="guid-media-box">
+                <!-- start game-info -->
+                <div class="game-controls">
+                    <div class="players">
+                        <h4 id="p1-name"></h4>
+                        <span>&#128060</span>
+                    </div>
+                    <div class="players">
+                        <h4 id="p2-name"></h4>
+                        <span>&#128047</span>
+                    </div>
+                </div>
+                <!-- end game-info -->
+                <!-- start game-buttons -->
+                <button class="game-controls" id="roll">
+                    <div id="hand-roll">
+                        <span class="material-icons">waving_hand</span>
+                        <span class="material-icons">casino</span>
+                    </div>
+                    <img src="img/d-q.png" id="dice">
+                </button>
+                <!-- end game-buttons -->
+            </div>
+            <div class="guid-media-box">
+                <!-- start game-turn -->
+                <h4 id="active-player"></h4>
+                <!-- start game-turn -->
+
+                <!-- start game-message -->
+                <div class="game-controls" id="game-messages">
+                    <h4>New message:</h4>
+                    <span id="message"></span>
+                </div>
+                <!-- end game-message -->
+            </div>
+        </div>
+        <!-- end game-guid -->
+    </div>
+    <!-- start sound-effects -->
+    <audio src="audio/Main.mp3" id="main-s" loop></audio>
+    <audio src="audio/Dice.mp3" id="dice-s"></audio>
+    <audio src="audio/Dragon.mp3" id="dragon-s"></audio>
+    <audio src="audio/Tree.mp3" id="tree-s"></audio>
+    <audio src="audio/Hit.mp3" id="hit-s"></audio>
+    <audio src="audio/Six.mp3" id="six-s"></audio>
+    <audio src="audio/Click.mp3" id="click-s"></audio>
+    <audio src="audio/Congratulations.mp3" id="congrats-s"></audio>
+    <!-- end sound-effects -->
+
+    <!-- include js-file -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
