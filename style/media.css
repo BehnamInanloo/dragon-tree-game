@@ -241,8 +241,8 @@
     flex-direction: column-reverse;
   }
 
-  div.game-controls:first-of-type button {
-    margin: 0.5rem 0;
+  div.game-controls:first-of-type button:nth-child(2) {
+    margin: 1.5rem 0;
   }
 
   #dice {
@@ -278,16 +278,21 @@
   .guid-media-box:last-of-type {
     width: 60%;
     border-radius: 1rem;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   #active-player {
     font-size: 1rem;
-    margin: 0.5rem 0 0 0;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0.1rem;
+    color: black;
+    border-radius: 1rem;
   }
 
   #game-messages {
-    height: 48%;
+    flex-grow: 0.8;
   }
 
   #game-messages h4 {
@@ -355,6 +360,10 @@
 
   #win {
     font-size: 1.5rem;
+  }
+
+  div.game-controls:first-of-type button:nth-child(2) {
+    margin: 1.2rem 0;
   }
 }
 
@@ -450,10 +459,6 @@
     font-size: 0.8rem;
   }
 
-  div.game-controls:first-of-type button {
-    margin: 0.5rem 0;
-  }
-
   .game-controls:first-of-type button span {
     font-size: 1.5rem;
   }
@@ -476,6 +481,10 @@
 
   #win {
     font-size: 1.2rem;
+  }
+
+  div.game-controls:first-of-type button:nth-child(2) {
+    margin: 1rem 0;
   }
 }
 

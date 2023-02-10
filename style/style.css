@@ -78,7 +78,7 @@ button {
 }
 
 .modal-dialog {
-    width: 50%;
+    width: 40%;
     background: radial-gradient(circle, #870000, #190a05);
     position: relative;
     left: 50%;
