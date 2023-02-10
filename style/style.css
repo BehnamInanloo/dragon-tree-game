@@ -75,12 +75,15 @@ button {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.95);
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-dialog {
     width: 40%;
     background: radial-gradient(circle, #870000, #190a05);
-    position: relative;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -221,6 +224,10 @@ button {
     color: red;
 }
 
+#info-modal .modal-dialog {
+    padding-bottom: 1.5rem;
+}
+
 #info-modal .modal-dialog h4 {
     color: #ddd;
     font-size: 1.3rem;
@@ -231,13 +238,17 @@ button {
     width: 100%;
     color: #ddd;
     padding: 0 1rem;
+    flex-grow: 1;
 }
 
 #rule-list ul {
+    height: 100%;
     padding: 0 1rem;
     font-size: 0.8rem;
     font-family: 'times new roman';
-    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #rule-list ul li {

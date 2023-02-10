@@ -11,14 +11,14 @@
 
 @media (min-width: 900px) {
   .cell {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 240%;
   }
 }
 
 @media (min-width: 1000px) {
   .cell {
-    font-size: 19px;
+    font-size: 18px;
     line-height: 230%;
   }
 
@@ -29,14 +29,14 @@
 
 @media (min-width: 1150px) {
   .cell {
-    font-size: 23px;
+    font-size: 22px;
     line-height: 240%;
   }
 }
 
 @media (min-width: 1300px) {
   .cell {
-    font-size: 25px;
+    font-size: 23px;
     line-height: 240%;
   }
 
@@ -47,7 +47,7 @@
 
 @media (min-width: 1500px) {
   .cell {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 240%;
   }
 
@@ -58,7 +58,7 @@
 
 @media (min-width: 1700px) {
   .cell {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 250%;
   }
 
@@ -146,6 +146,10 @@
     font-size: 1.2rem;
   }
 
+  #game-guid-title-1 span:last-child {
+    font-size: 1rem;
+  }
+
   .game-controls:first-of-type button span {
     font-size: 2rem;
   }
@@ -211,6 +215,10 @@
   .modal-title h2,
   .modal-title span {
     font-size: 1rem;
+  }
+
+  #info-modal .modal-dialog h4 {
+    font-size: 0.9rem;
   }
 
   #input1-m,
@@ -286,13 +294,17 @@
     font-size: 1rem;
     margin-bottom: 0;
     background-color: rgba(255, 255, 255, 0.4);
-    padding: 0.1rem;
+    padding: 0.4rem;
     color: black;
     border-radius: 1rem;
   }
 
   #game-messages {
-    flex-grow: 0.8;
+    flex-grow: 0.9;
+  }
+
+  #roll {
+    flex-grow: 0.4;
   }
 
   #game-messages h4 {
@@ -331,6 +343,12 @@
     font-size: 20px;
     line-height: 300%;
   }
+
+  #info-modal .modal-dialog {
+    height: 70vh;
+    overflow: auto;
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 600px) {
@@ -365,6 +383,10 @@
   div.game-controls:first-of-type button:nth-child(2) {
     margin: 1.2rem 0;
   }
+
+  #active-player {
+    padding: 0.3rem;
+  }
 }
 
 @media (max-width: 580px) {
@@ -375,6 +397,10 @@
   .modal-title h2,
   .modal-title span {
     font-size: 0.9rem;
+  }
+
+  #info-modal .modal-dialog h4 {
+    font-size: 0.8rem;
   }
 
   .modal-dialog label {
@@ -404,6 +430,18 @@
   #win {
     font-size: 1.3rem;
   }
+
+  #game-messages {
+    flex-grow: 0.7;
+  }
+
+  #roll {
+    flex-grow: 0.55;
+  }
+
+  #rule-list ul li {
+    font-size: 0.65rem;
+  }
 }
 
 @media (max-width: 470px) {
@@ -423,6 +461,10 @@
 
   #game-guid-title-0 span:first-child {
     font-size: 1.3rem;
+  }
+
+  #game-guid-title-0 span:last-child {
+    font-size: 0.9rem;
   }
 
   .guid-media-box {
@@ -457,6 +499,7 @@
 
   #active-player {
     font-size: 0.8rem;
+    padding: 0.2rem;
   }
 
   .game-controls:first-of-type button span {
@@ -483,8 +526,12 @@
     font-size: 1.2rem;
   }
 
-  div.game-controls:first-of-type button:nth-child(2) {
-    margin: 1rem 0;
+  #game-messages {
+    flex-grow: 0.8;
+  }
+
+  #roll {
+    flex-grow: 0.3;
   }
 }
 
@@ -492,6 +539,10 @@
 
   .modal-title h2,
   .modal-title span {
+    font-size: 0.7rem;
+  }
+
+  #info-modal .modal-dialog h4 {
     font-size: 0.7rem;
   }
 
@@ -510,6 +561,14 @@
 
   #game-messages h4 {
     font-size: 0.75rem;
+  }
+
+  #game-messages {
+    flex-grow: 0.8;
+  }
+
+  #roll {
+    flex-grow: 0.4;
   }
 }
 
@@ -546,6 +605,10 @@
     font-size: 1rem;
   }
 
+  #game-guid-title-0 span:last-child {
+    font-size: 0.7rem;
+  }
+
   #message {
     font-size: 0.55rem;
   }
@@ -560,6 +623,14 @@
 
   #win {
     font-size: 1rem;
+  }
+
+  #game-messages {
+    flex-grow: 0.8;
+  }
+
+  #roll {
+    flex-grow: 0.7;
   }
 }
 
@@ -613,7 +684,7 @@
   }
 
   .modal-dialog label {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   #submit-player {
