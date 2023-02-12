@@ -329,7 +329,7 @@
 
 @media (max-width: 700px) {
   .cell {
-    font-size: 22px;
+    font-size: 21px;
     line-height: 300%;
   }
 
@@ -352,6 +352,11 @@
 }
 
 @media (max-width: 600px) {
+  .cell {
+    font-size: 19px;
+    line-height: 300%;
+  }
+
   #game-guid {
     padding: 0.25rem;
   }
@@ -421,6 +426,13 @@
   }
 }
 
+@media (max-width: 540px) {
+  .cell {
+    font-size: 16.5px;
+    line-height: 290%;
+  }
+}
+
 @media (max-width: 500px) {
   .cell {
     font-size: 16px;
@@ -445,6 +457,11 @@
 }
 
 @media (max-width: 470px) {
+  .cell {
+    font-size: 14px;
+    line-height: 300%;
+  }
+
   #rule-list ul {
     font-size: 0.7rem;
   }
@@ -535,6 +552,13 @@
   }
 }
 
+@media (max-width: 440px) {
+  .cell {
+    font-size: 12.5px;
+    line-height: 300%;
+  }
+}
+
 @media (max-width: 410px) {
 
   .modal-title h2,
@@ -547,8 +571,8 @@
   }
 
   .cell {
-    font-size: 11px;
-    line-height: 350%;
+    font-size: 12px;
+    line-height: 310%;
   }
 
   #game-guid-title-0 span:first-child {
@@ -572,6 +596,13 @@
   }
 }
 
+@media (max-width: 390px) {
+  .cell {
+    font-size: 10.5px;
+    line-height: 300%;
+  }
+}
+
 @media (max-width: 360px) {
   .modal-dialog {
     width: 100%;
@@ -583,8 +614,8 @@
   }
 
   .cell {
-    font-size: 9px;
-    line-height: 350%;
+    font-size: 10px;
+    line-height: 310%;
   }
 
   .players h4 {
@@ -636,8 +667,8 @@
 
 @media (max-width: 330px) {
   .cell {
-    font-size: 8px;
-    line-height: 350%;
+    font-size: 9.5px;
+    line-height: 310%;
   }
 
   #win {
@@ -645,10 +676,24 @@
   }
 }
 
+@media (max-width: 310px) {
+  .cell {
+    font-size: 8.5px;
+    line-height: 310%;
+  }
+}
+
+@media (max-width: 285px) {
+  .cell {
+    font-size: 7.75px;
+    line-height: 320%;
+  }
+}
+
 @media (max-width: 260px) {
   .cell {
     font-size: 7px;
-    line-height: 350%;
+    line-height: 330%;
   }
 
   #hand-roll {
@@ -676,7 +721,18 @@
   }
 }
 
+@media (max-width: 230px) {
+  .cell {
+    font-size: 6px;
+    line-height: 330%;
+  }
+}
+
 @media (max-width: 200px) {
+  .cell {
+    font-size: 3vw;
+    line-height: 300%;
+  }
 
   .modal-title h2,
   .modal-title span {

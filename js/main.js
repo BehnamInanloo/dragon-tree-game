@@ -99,6 +99,7 @@ function startGame() {
         BOARD[i].style.backgroundColor = "#181818"
     }
     BOARD[99].innerHTML = "&#127937"
+    BOARD[0].innerHTML = "&#128060&#128047"
     /* end clearing previuos state and go to default styles */
 
     /* start producing random dragons and trees */
