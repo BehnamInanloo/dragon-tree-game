@@ -214,7 +214,6 @@ function roll() {
                 BOARD[i].innerHTML = ""
                 BOARD[i].style.backgroundColor = "rgb(207, 207, 207)"
             }
-            document.getElementById("board").style.position = "relative"
             WIN.innerText = `Congratulation! ${playersName[activePlayer]} has won the game :)`
             WIN.style.display = "block"
             return
