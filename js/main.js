@@ -58,6 +58,13 @@ for (let i = 0; i < 100; i++) {
     cell.classList.add("cell")
     document.getElementById("board").appendChild(cell)
 }
+
+for (let i = 0; i < 100; i++) {
+    let cellNumber = document.createElement("div")
+    cellNumber.classList.add("cell-number")
+    cellNumber.innerHTML = i + 1
+    document.getElementById("board-number").appendChild(cellNumber)
+}
 /* end creating elements in document */
 
 /* start selecting elements in document */

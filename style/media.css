@@ -1,7 +1,12 @@
 @media (min-width: 800px) {
   .cell {
     font-size: 15px;
-    line-height: 250%;
+    line-height: 300%;
+  }
+
+  .cell-number {
+    font-size: 0.45rem;
+    padding-left: 0.1rem;
   }
 
   #game-guid-title-0 {
@@ -12,14 +17,19 @@
 @media (min-width: 900px) {
   .cell {
     font-size: 16px;
-    line-height: 240%;
+    line-height: 290%;
   }
 }
 
 @media (min-width: 1000px) {
   .cell {
     font-size: 18px;
-    line-height: 230%;
+    line-height: 280%;
+  }
+
+  .cell-number {
+    font-size: 0.55rem;
+    padding-left: 0.15rem;
   }
 
   #win {
@@ -31,6 +41,11 @@
   .cell {
     font-size: 22px;
     line-height: 240%;
+  }
+
+  .cell-number {
+    font-size: 0.6rem;
+    padding-left: 0.3rem;
   }
 }
 
@@ -199,6 +214,11 @@
     line-height: 280%;
   }
 
+  .cell-number {
+    font-size: 0.6rem;
+    padding-left: 0.3rem;
+  }
+
   #game-guid-title-0 {
     display: flex;
     margin-top: 1rem;
@@ -226,9 +246,16 @@
     font-size: 0.6rem;
   }
 
-  #board {
+  #board-controler {
     width: 98vw;
     height: 98vw;
+    margin: 0 0 1rem 0;
+  }
+
+  #board,
+  #board-number {
+    width: 100%;
+    height: 100%;
     margin: 0 0 1rem 0;
   }
 
@@ -357,6 +384,11 @@
     line-height: 300%;
   }
 
+  .cell-number {
+    font-size: 0.5rem;
+    padding-left: 0.2rem;
+  }
+
   #game-guid {
     padding: 0.25rem;
   }
@@ -460,6 +492,11 @@
   .cell {
     font-size: 14px;
     line-height: 300%;
+  }
+
+  .cell-number {
+    font-size: 0.45rem;
+    padding-left: 0.15rem;
   }
 
   #rule-list ul {
@@ -601,6 +638,11 @@
     font-size: 10.5px;
     line-height: 300%;
   }
+
+  .cell-number {
+    font-size: 0.4rem;
+    padding-left: 0.1rem;
+  }
 }
 
 @media (max-width: 360px) {
@@ -669,6 +711,10 @@
   .cell {
     font-size: 9.5px;
     line-height: 310%;
+  }
+
+  .cell-number {
+    font-size: 0.3rem;
   }
 
   #win {
