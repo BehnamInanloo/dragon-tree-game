@@ -1,0 +1,44 @@
+{
+  "author" : "Behnam Inanloo",
+  "short_name": "D&T",
+  "name": "Dragon & Tree",
+  "description" : "This is a game like snake and ladder",
+  "icons": [
+    {
+      "src": "img/main-logo-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "img/main-logo-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "img/main-logo-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "img/main-logo-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "img/main-logo-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "img/main-logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "id": "/dragon-tree-game",
+  "scope": "/",
+  "start_url": "/dragon-tree-game",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#870000"
+}
